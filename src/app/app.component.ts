@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
+import { RestService } from '../services/rest.service'
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'yelp-api';
+  title = 'The OG Yelp API App';
+  restaurants: any
+
+  constructor(
+    private restService: RestService
+  ){ }
+  ngOnInit() {
+    return this.restService.getRest().subscribe(data => this.restaurants = data)
+  }
 }
