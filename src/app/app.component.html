@@ -3,16 +3,32 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
+  <div class="example-container">
+    <form [formGroup]="myForm">
+      Value: {{ myForm.value | json}}
+      <hr>
+      <select placeholder="Select" formControlName="cost">
+        <option disabled selected value>-- Select a Price --</option>
+        <option value=1>$</option>
+        <option value=2>$$</option>
+        <option value=3>$$$</option>
+        <option value=4>$$$$</option>
+      </select>
+      <input placeholder="Type your zipcode" formControlName="zipcode">
+      <button type='submit' (click)='getRest()'>Submit</button>
+    </form>
+  </div>
+  <br /> <br />
   <div *ngIf='restaurants'>
     <div *ngFor='let places of restaurants.businesses'>
       <div class="card">
         <div class="cardContainer">
-          <h3>{{ places.name }}</h3>
-          <h5> {{places.price}}  </h5>
+          <h1>{{ places.name }}</h1>
           <p><i> {{ places.location.address1 }} </i></p>
-          <p> {{ places.phone }}</p>
-          <p>{{ places.transactions }}</p>
           <img class="poiPicture" src="{{ places.image_url }}" />
+          <p>Phone Number: {{ places.phone }}</p>
+          <p>Order Types: {{ places.transactions }}</p>
+          <h5>Price: {{places.price}} </h5>
           <p>{{ places.rating }}/5 </p>
           <br />
         </div>
@@ -20,5 +36,3 @@
     </div>
   </div>
 </div>
-
-

@@ -21,7 +21,7 @@ export class RestService {
     console.log('Hello YELP Provider');
    }
 
-   getRest() {
-     return this.http.get(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=restaurants&location=46038`, httpOptions)
+   getRest(zipcode, cost) {
+     return this.http.get(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=restaurants&location=${zipcode}&price=${cost}`, httpOptions)
    }
 }
