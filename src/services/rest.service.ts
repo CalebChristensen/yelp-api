@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
 const APIKEY = environment.APIKEY
 
 const httpOptions = {
-  headers: new HttpHeaders({'Authorization': APIKEY, 'Content-Type': 'application/json'})
+  headers: new HttpHeaders({ 'Authorization': APIKEY, 'Content-Type': 'application/json' })
 }
 
 @Injectable({
@@ -14,15 +14,9 @@ const httpOptions = {
 })
 export class RestService {
 
-  constructor(public http: HttpClient) {
-    let headers: HttpHeaders = new HttpHeaders();
-    headers = headers.append('Content-Type', 'application/json');
-    headers = headers.append('Origin', 'https://cors-anywhere.herokuapp.com/')
-    headers = headers.append('Authorization', APIKEY);
-    console.log('Hello YELP Provider');
-   }
+  constructor(public http: HttpClient) { }
 
-   getRest(zipcode, cost): Observable<any> {
-     return this.http.get(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=restaurants&location=${zipcode}&price=${cost}`, httpOptions)
-   }
+  getRest(zipcode, cost): Observable<any> {
+    return this.http.get(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=restaurants&location=${zipcode}&price=${cost}`, httpOptions)
+  }
 }

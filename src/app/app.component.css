@@ -1,3 +1,12 @@
+.jumbo {
+  background-image: url('https://wallpapershome.com/images/wallpapers/cocktail-3840x2160-fruit-ice-4k-16060.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  min-height: 100vh;
+}
+
+
 /* Inside of the Card Content & Styling */
 .cardContainer {
   padding: 2px 16px;
@@ -25,6 +34,7 @@
   border-radius: 5px;
   text-align: center;
   margin: auto;
+  background-color: whitesmoke;
 }
 
 /* Ipad Pro COMPLETE */

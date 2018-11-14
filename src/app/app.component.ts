@@ -18,7 +18,6 @@ export class AppComponent {
   constructor(
     private restService: RestService
   ){ }
-
   
   getRest() {
     this.restService.getRest(this.myForm.value.zipcode, this.myForm.value.cost).subscribe(data => {
