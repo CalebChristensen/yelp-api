@@ -27,7 +27,7 @@
         <p><i> {{ restaurants.location.address1 }} </i></p>
         <img class="poiPicture" src="{{ restaurants.image_url }}" />
         <p>Phone Number: {{ restaurants.phone }}</p>
-        <p>Order Types: {{ restaurants.transactions }} || Note: If Blank Then We Do NOT Deliver!</p>
+        <p>Order Types: {{ delivery }} </p>
         <h5>Price: {{restaurants.price}} </h5>
         <p><img src="../assets/yelp_stars/web_and_ios/extra_large/extra_large_0.png" *ngIf="restaurants.rating === 0">
         </p>

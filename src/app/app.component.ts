@@ -18,11 +18,18 @@ export class AppComponent {
   constructor(
     private restService: RestService
   ){ }
-  
+  delivery: string
+
   getRest() {
     this.restService.getRest(this.myForm.value.zipcode, this.myForm.value.cost).subscribe(data => {
     this.restaurants = data.businesses[Math.floor(Math.random()*data.businesses.length)]
     console.log(this.restaurants)
+    let deliver = this.restaurants.transactions.indexOf('delivery')
+        if(deliver > 0){
+          this.delivery = "Pickup & Delivery!"
+        } else {
+          this.delivery = 'Pickup & Dine-In Only!'
+        }
     return this.restaurants
   })}
 
