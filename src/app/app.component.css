@@ -61,6 +61,13 @@
   .poiPicture {
     height: 60vh;
   }
+  .jumbo {
+    background-image: url('../assets/cocktail-3840x2160-fruit-ice-4k-16060.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+
+  }
 }
 
 /* Ipad COMPLETE */
@@ -81,6 +88,14 @@
   .poiPicture {
     height: 40vh;
   }
+  .jumbo {
+    background-image: url('../assets/cocktail-3840x2160-fruit-ice-4k-16060.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+
+  }
+  
 
 }
 
@@ -101,6 +116,13 @@
   }
   .poiPicture {
     height: 30vh;
+  }
+  .jumbo {
+    background-image: url('../assets/cocktail-3840x2160-fruit-ice-4k-16060.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+
   }
 
 }
@@ -123,6 +145,13 @@
   .poiPicture {
     height: 25vh;
   }
+  .jumbo {
+    background-image: url('../assets/cocktail-3840x2160-fruit-ice-4k-16060.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+
+  }
 
 }
 
@@ -143,6 +172,13 @@
   }
   .poiPicture {
     height: 35vh;
+  }
+  .jumbo {
+    background-image: url('../assets/cocktail-3840x2160-fruit-ice-4k-16060.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+
   }
 
 }
