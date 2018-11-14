@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { environment } from '../environments/environment.prod'
+import { Observable } from 'rxjs';
 
 const APIKEY = environment.APIKEY
 
@@ -21,7 +22,7 @@ export class RestService {
     console.log('Hello YELP Provider');
    }
 
-   getRest(zipcode, cost) {
+   getRest(zipcode, cost): Observable<any> {
      return this.http.get(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=restaurants&location=${zipcode}&price=${cost}`, httpOptions)
    }
 }
