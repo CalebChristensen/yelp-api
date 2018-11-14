@@ -11,7 +11,7 @@ export class AppComponent {
   title = 'The OG Yelp API App';
   myForm: FormGroup;
   restaurants: any
-
+  
   constructor(
     private fb: FormBuilder,
     private restService: RestService
@@ -24,6 +24,7 @@ export class AppComponent {
     this.myForm.valueChanges.subscribe(console.log)
   }
   getRest(): void {
-    this.restService.getRest(this.myForm.value.zipcode, this.myForm.value.cost).subscribe(data => this.restaurants = data)
+    this.restService.getRest(this.myForm.value.zipcode, this.myForm.value.cost).subscribe(data => this.restaurants = data )
   }
+  
 }

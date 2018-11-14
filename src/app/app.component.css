@@ -4,7 +4,7 @@
 }
 
 .poiPicture {
-  height: 80vh;
+  height: 85vh;
 }
 
 .card:hover {
@@ -20,7 +20,7 @@
   box-shadow: 2px 4px 20px black;
   border: 1px solid whitesmoke;
   transition: 0.3s;
-  width: 70vw;
+  width: 65vw;
   height: 100%;
   border-radius: 5px;
   text-align: center;

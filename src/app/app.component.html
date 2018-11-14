@@ -29,7 +29,16 @@
           <p>Phone Number: {{ places.phone }}</p>
           <p>Order Types: {{ places.transactions }}</p>
           <h5>Price: {{places.price}} </h5>
-          <p>{{ places.rating }}/5 </p>
+          <p><img src="../assets/yelp_stars/web_and_ios/extra_large/extra_large_0.png" *ngIf="places.rating === 0"> </p>
+          <p><img src="../assets/yelp_stars/web_and_ios/extra_large/extra_large_1.png" *ngIf="places.rating === 1"> </p>
+          <p><img src="../assets/yelp_stars/web_and_ios/extra_large/extra_large_1_half.png" *ngIf="places.rating === 1.5"> </p>
+          <p><img src="../assets/yelp_stars/web_and_ios/extra_large/extra_large_2.png" *ngIf="places.rating === 2"> </p>
+          <p><img src="../assets/yelp_stars/web_and_ios/extra_large/extra_large_2_half.png" *ngIf="places.rating === 2.5"> </p>
+          <p><img src="../assets/yelp_stars/web_and_ios/extra_large/extra_large_3.png" *ngIf="places.rating === 3"> </p>
+          <p><img src="../assets/yelp_stars/web_and_ios/extra_large/extra_large_3_half.png" *ngIf="places.rating === 3.5"> </p>
+          <p><img src="../assets/yelp_stars/web_and_ios/extra_large/extra_large_4.png" *ngIf="places.rating === 4"> </p>
+          <p><img src="../assets/yelp_stars/web_and_ios/extra_large/extra_large_4_half.png" *ngIf="places.rating === 4.5"> </p>
+          <p><img src="../assets/yelp_stars/web_and_ios/extra_large/extra_large_5.png" *ngIf="places.rating === 5"> </p>
           <br />
         </div>
       </div>
