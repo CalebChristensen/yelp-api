@@ -1,15 +1,15 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
 <div class="jumbo" style="text-align:center">
+  <br />
   <h1 style="color:whitesmoke">
-    Welcome to {{ title }}!
+    {{ title }}!
   </h1>
   <div class="example-container">
     <form [formGroup]="myForm">
       Value: {{ myForm.value | json}}
       <hr>
       <select placeholder="Select" formControlName="cost">
-        <option disabled selected value>-- Select a Price --</option>
         <option value=1>$</option>
         <option value=2>$$</option>
         <option value=3>$$$</option>

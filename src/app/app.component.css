@@ -6,6 +6,10 @@
   min-height: 100vh;
 }
 
+.example-container {
+  width: 100%;
+}
+
 
 /* Inside of the Card Content & Styling */
 .cardContainer {
@@ -25,7 +29,6 @@
 /* | MEDIA QUERIES | */
 /* Desktop PC & Responsive */
 .card {
-  /* This Card is for Restauraunts and POI's Divs */
   box-shadow: 2px 4px 20px black;
   border: 1px solid whitesmoke;
   transition: 0.3s;
@@ -35,6 +38,9 @@
   text-align: center;
   margin: auto;
   background-color: whitesmoke;
+}
+.poiPicture {
+  height: 85vh;
 }
 
 /* Ipad Pro COMPLETE */
@@ -52,6 +58,9 @@
     text-align: center;
     margin: auto;
   }
+  .poiPicture {
+    height: 60vh;
+  }
 }
 
 /* Ipad COMPLETE */
@@ -68,6 +77,9 @@
     border-radius: 5px;
     text-align: center;
     margin: auto;
+  }
+  .poiPicture {
+    height: 40vh;
   }
 
 }
@@ -87,6 +99,9 @@
     text-align: center;
     margin: auto;
   }
+  .poiPicture {
+    height: 30vh;
+  }
 
 }
 
@@ -105,6 +120,9 @@
     text-align: center;
     margin: auto;
   }
+  .poiPicture {
+    height: 25vh;
+  }
 
 }
 
@@ -122,6 +140,9 @@
     border-radius: 5px;
     text-align: center;
     margin: auto;
+  }
+  .poiPicture {
+    height: 35vh;
   }
 
 }
